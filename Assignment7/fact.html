@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div>Enter a number to find factorial.</div>
+        <br>
+        <input type="text" id="i1">
+        <br><br>
+        <button onclick="myfunc1()">FIND</button>
+
+
+        <script>
+            function myfunc1()
+            {
+                i=2;
+                f=1;
+                a=parseInt(document.getElementById("i1").value);
+                for(i=2;i<=a;i++)
+                {
+                    f=f*i;
+                }
+                alert(f);
+            }
+        </script>
+        
+    </body>
+</html>

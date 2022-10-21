@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <div class="head">
+        <h1>Enter your details in the below form</h1>
+    </div>
+
+    <table>
+        <tr>
+            <td>Name</td>
+            <td>: <input type="text" id="i1"></td>
+            
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td>: <input type="text" id="i2"></td>
+            
+        </tr>
+        <tr>
+            <td>Age</td>
+            <td>: <input type="text" id="i3"></td>
+        </tr>
+        <tr>
+            <td>Phone Number</td>
+            <td>: <input type="text" id="i4"></td>
+        </tr>
+        <tr>
+            <td>Address</td>
+            <td>: <input type="text" id="i5"></td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td>: <input type="text" id="i6"></td>
+        </tr>
+        <tr>
+            <td>Occupation</td>
+            <td>: <input type="text" id="i7"></td>
+        </tr>
+    </table>
+
+    <button onclick="myfunc()">Submit</button>
+<br><br><br>
+    <div id="list"></div>
+    <script>
+        // document.getElementById("list").innerHTML = a;
+        function myfunc() 
+        {
+            var a = " ";
+            a = a + " " + document.getElementById("i1").value;
+            a = a + " " + document.getElementById("i2").value;
+            a = a + " " + document.getElementById("i3").value;
+            a = a + " " + document.getElementById("i4").value;
+            a = a + " " + document.getElementById("i5").value;
+            a = a + " " + document.getElementById("i6").value;
+            a = a + " " + document.getElementById("i7").value;
+
+            document.getElementById("list").innerHTML = a;
+        }
+    </script>
+
+</body>
+
+</html>
