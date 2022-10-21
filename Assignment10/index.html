@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div class="head">MY CALCULATOR</div>
+        <div class="container">
+            <div class="text">Enter a Number in the below box.</div>
+            <input type="number" id="input" placeholder="Enter your number" onfocus="focusevent()">
+            <div class="text">Click any of the below buttons to perform the operations.</div>
+            <div class="buttons">
+                <button class="btn" id="fact" onclick="factorial()">Factorial</button>
+                <button class="btn" id="prime" onclick="primeno()">Prime Number or not</button>
+                <button class="btn" id="fib" onclick="fibo()">Fibonacci Series</button>
+                <button class="btn" id="nat" onclick="natural()">Natural Numbers</button>
+            </div>
+            <div id="hover"></div>
+            <div class="text">RESULT</div>
+            <div id="result"></div>
+        </div>
+
+
+
+        <script src="script.js"></script>
+    </body>
+</html>
